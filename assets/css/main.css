@@ -8,7 +8,7 @@
 /* Colors */
 :root {
   --color-default: #2b180d;
-  --color-primary: #00008ba4;
+  --color-primary: #0300d4;
   --color-secondary: #009987;
 }
 
@@ -2014,6 +2014,168 @@ width: 500px;
   to {
     transform: translate3d(0, 10px, 0);
   }
+}
+
+#registration-page {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0px;
+}
+
+.signup-form  {
+  flex:1;
+  width: 100%;  
+  margin-top: auto;
+  margin-bottom:  auto;
+  display: flex;
+  justify-content: center;
+}
+
+/* FORM HEADER */
+.form-header {
+  background-color: var(--color-secondary);
+  padding: 20px 20px;  
+  border-radius: 15px 0px 0px 15px;  
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 40%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.form-header h1 {
+  font-family: var(--font-primary);
+  font-size: 28px;
+  text-align: center;
+  color: #000000;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.form-header p {
+  font-size: 15px;
+  text-align: center;
+  color: #fff;
+}
+
+/* FORM BODY */
+.form-body {
+  border-radius:  0px 15px 15px 0px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;  
+  padding: 20px 20px;
+}
+
+.row {
+  display:flex; 
+}
+
+.input-group {
+  flex:1;  
+  display:flex;
+  flex-direction:column; 
+  margin:10px 5px;
+}
+
+/* FORM BODY - Gender & Hobbies */
+.radio-group, .checkbox-group {
+  display:flex;
+}
+
+.radio-group div, .checkbox-group div {
+  flex:1;
+}
+
+.radio-group label, .checkbox-group label  {
+  color:#666;
+  cursor:pointer;
+}
+/* FORM BODY - Source of Income & Income */
+.range-group {
+  display:flex;
+}
+
+.range-group input {
+    flex:1;
+}
+
+.range-group label {
+  margin-left:10px;
+  background-color: var(--color-primary);
+  color:white;
+  border-radius: 5px;
+  padding:5px;
+  font-size:17px;
+  text-align:center;
+}
+
+/* MOBILE VIEW */
+@media only screen and (max-width: 500px) {
+  .row{
+    flex-direction:column; 
+  }
+
+  .btn {
+      flex:1;
+  }
+}
+
+
+/* FORM FOTTER */
+.form-footer {
+  display:flex;
+  justify-content: center;
+  padding: 50px 20px;
+}
+
+.form-footer .btn {
+  padding: 10px 55px;
+  background-color: var(--color-primary);
+  font-size:17px;
+  border:none;
+  border-radius:5px;
+  color:#bcf5e7;
+  cursor:pointer;
+}
+
+.form-footer .btn:hover{
+  background-color: var(--color-secondary);
+  transition: all 0.3s ease-in;
+}
+
+/* INPUT*/
+
+label {
+  background-color: #ffffff;
+font-size: 17px;
+font-weight: 500;
+}
+
+input[type="text"],
+input[type="email"] ,
+input[type="password"],
+input[type="file"],
+input[type="number"],
+select,
+textarea  {
+width:100%;
+
+font-size: 18px;
+height: 34px;
+padding-left: 10px;
+padding-right: 10px;
+color: #666;
+border: 1px solid #d6d6d6;
+border-radius: 4px;
+background: white;
+outline: none;
+}
+
+
+textarea {
+resize: none;
+height:100px;
 }
 
 /*--------------------------------------------------------------

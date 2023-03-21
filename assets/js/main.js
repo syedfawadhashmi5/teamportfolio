@@ -187,3 +187,40 @@ document.addEventListener('DOMContentLoaded', () => {
   
 
 });
+
+
+
+  const firebaseConfig = {
+  apiKey: "AIzaSyBsVs1kNeJTECNSA1-IhTZvYTA89hOepM4",
+  authDomain: "portfolioweb-2e85a.firebaseapp.com",
+  projectId: "portfolioweb-2e85a",
+  storageBucket: "portfolioweb-2e85a.appspot.com",
+  messagingSenderId: "344005757176",
+  appId: "1:344005757176:web:0e57b564b781ed7a91d30d",
+  measurementId: "G-03K815Q8P8"
+};
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+
+
+// Get a reference to the database service
+const db = firebase.firestore();
+
+// Save form data to the database
+db.collection("students").add({
+  firstName: firstNameInput.value,
+  lastName: lastNameInput.value,
+  email: emailInput.value,
+  gender: genderInput.value,
+  maritalStatus: maritalStatusInput.value,
+  profilePicture: profilePictureInput.value,
+  age: ageInput.value,
+  skills: skillsInput.value,
+  password: passwordInput.value
+})
+.then((docRef) => {
+  console.log("Document written with ID: ", docRef.id);
+})
+.catch((error) => {
+  console.error("Error adding document: ", error);
+});

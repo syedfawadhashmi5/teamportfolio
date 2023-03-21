@@ -10,8 +10,8 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <!-- <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon"> -->
+  <link href="assets/img/logo.png" rel="icon">
+  <link href="assets/img/logo.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -48,7 +48,7 @@
 
       <a href="index.html" class="logo d-flex align-items-center">
 
-        <h1 class="d-flex align-items-center">OctaUXLab</h1>
+        <h1 class="d-flex align-items-center"><img src="./assets/img/logo.png" alt="" srcset=""></h1>
       </a>
 
       <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
@@ -56,30 +56,12 @@
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html" class="active">Home</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="services.html">Services</a></li>
           <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="team.html">Team</a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
-            <ul>
-              <li><a href="#">Dropdown 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
-                <ul>
-                  <li><a href="#">Deep Dropdown 1</a></li>
-                  <li><a href="#">Deep Dropdown 2</a></li>
-                  <li><a href="#">Deep Dropdown 3</a></li>
-                  <li><a href="#">Deep Dropdown 4</a></li>
-                  <li><a href="#">Deep Dropdown 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Dropdown 2</a></li>
-              <li><a href="#">Dropdown 3</a></li>
-              <li><a href="#">Dropdown 4</a></li>
-            </ul>
           </li>
-          <li><a href="contact.html" class="active">Contact</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav><!-- .navbar -->
 
@@ -101,71 +83,116 @@
       </div>
     </div><!-- End Breadcrumbs -->
 
-    <!-- ======= Contact Section ======= -->
-    <section id="contact" class="contact">
-      <div class="container position-relative" data-aos="fade-up">
-
-        <div class="row gy-4 d-flex justify-content-end">
-
-          <div class="col-lg-5" data-aos="fade-up" data-aos-delay="100">
-
-            <div class="info-item d-flex">
-              <i class="bi bi-geo-alt flex-shrink-0"></i>
-              <div>
-                <h4>Location:</h4>
-                <p>A108 Adam Street, New York, NY 535022</p>
+    <section id="registration-page" data-aos="fade-up" data-aos-delay="100">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <form class="signup-form">
+              <div class="form-header">
+                <h1>Contact WIth Us</h1>
+                <p>Are you a student who is interested in growing your skills and building your freelancing career? Look no further! Our student register form is the perfect way to get started.</p>
+                <p>Our registration form is designed to help you learn the skills you need to succeed in the world of freelancing. Whether you're interested in web development, graphic design, writing,Amazon Va or any other field, we can help you get started.</p>
+                <p>Our team of experts is here to guide you every step of the way. We'll help you find the right resources and connect you with the right people to get your freelancing career off the ground. Whether you're looking for tips on how to get started or want to connect with other freelancers, we're here to help.</p>
+                <p>So why wait? If you're a student who is interested in growing your skills and building your freelancing career, sign up for our student register form today. We can't wait to help you achieve your goals and take your career to the next level.</p>
+            </div>
+              <!-- FORM BODY -->
+              <div class="form-body">
+                  <!-- First name & Last name -->
+                  <div class="row">
+                      <div class="input-group">
+                          <label>First name </label>
+                          <input type="text" placholder="Enter your first name">
+                      </div>
+                      <div class="input-group">
+                          <label>Last name</label>
+                          <input type="text" placholder="Enter your last name">
+                      </div>
+                  </div>
+                  <!-- Email -->
+                  <div class="row">
+                      <div class="input-group">
+                          <label>Email </label>
+                          <input type="email" placholder="Enter your email address">
+                      </div>
+                  </div>
+                  <!-- Gender & stuta -->
+                  <div class="row">
+                      <div class="input-group">
+                          <label>Gender </label>
+    
+                          <div class="radio-group">
+    
+                              <div>
+                                  <label for="male">
+                                      <input type="radio" name="gender" id="male">
+                                      Male
+                                  </label>
+                              </div>
+    
+                              <div>
+                                  <label for="female">
+                                      <input type="radio" name="gender" id="female">
+                                      Female
+                                  </label>
+                              </div>
+    
+                              <div>
+                                  <label for="other">
+                                      <input type="radio" name="gender" id="other"> Other
+                                  </label>
+                              </div>
+    
+                          </div>
+                      </div>
+                      <div class="input-group">
+                          <label>Marital status</label>
+                          <div class="checkbox-group">
+                              <div>
+                                  <label for="music">
+                                      <input type="checkbox" name="hobbies" id="music">
+                                      Single
+                                  </label>
+                              </div>
+    
+                              <div>
+                                  <label for="cooking">
+                                      <input type="checkbox" name="cooking" id="cooking">
+                                      Married
+                                  </label>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <!-- Upload Profile Picure & Age -->
+                  <div class="row">
+                      <div class="input-group">
+                          <label>Upload Profile Picture</label>
+                          <input type="file">
+                      </div>
+                      <div class="input-group">
+                          <label>Age</label>
+                          <input type="number">
+                      </div>
+                  </div>
+    
+                  <!--  Bio   -->
+                  <div class="row">
+                      <div class="input-group">
+                          <label for="">Introce your self and deep intro your skills</label>
+                          <textarea> </textarea>
+                      </div>
+                  </div>
+                                <!--  FORM FOOTER   -->
+              <div class="form-footer">
+                <button class="btn">Create</button>
+            </div>
               </div>
-            </div><!-- End Info Item -->
 
-            <div class="info-item d-flex">
-              <i class="bi bi-envelope flex-shrink-0"></i>
-              <div>
-                <h4>Email:</h4>
-                <p>info@example.com</p>
-              </div>
-            </div><!-- End Info Item -->
-
-            <div class="info-item d-flex">
-              <i class="bi bi-phone flex-shrink-0"></i>
-              <div>
-                <h4>Call:</h4>
-                <p>+1 5589 55488 55</p>
-              </div>
-            </div><!-- End Info Item -->
-
+          </form>
           </div>
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="250">
-
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-              <div class="row">
-                <div class="col-md-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
-                </div>
-                <div class="col-md-6 form-group mt-3 mt-md-0">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
-                </div>
-              </div>
-              <div class="form-group mt-3">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
-              </div>
-              <div class="form-group mt-3">
-                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
-              </div>
-              <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
-              </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
-            </form>
-
-          </div><!-- End Contact Form -->
-
         </div>
-
       </div>
-    </section><!-- End Contact Section -->
+  </section>
 
   </main><!-- End #main -->
 
@@ -175,88 +202,62 @@
     <div class="footer-content">
       <div class="container">
         <div class="row gy-4">
-          <div class="col-lg-5 col-md-12 footer-info">
-            <a href="index.html" class="logo d-flex align-items-center">
-              <span>Nova</span>
-            </a>
-            <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus.</p>
-            <div class="social-links d-flex  mt-3">
-              <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-              <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-              <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-              <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-6 footer-links">
-            <h4>Useful Links</h4>
-            <ul>
-              <li><i class="bi bi-dash"></i> <a href="#">Home</a></li>
-              <li><i class="bi bi-dash"></i> <a href="#">About us</a></li>
-              <li><i class="bi bi-dash"></i> <a href="#">Services</a></li>
-              <li><i class="bi bi-dash"></i> <a href="#">Terms of service</a></li>
-              <li><i class="bi bi-dash"></i> <a href="#">Privacy policy</a></li>
-            </ul>
-          </div>
-
-          <div class="col-lg-2 col-6 footer-links">
+          <div class="col-md-4 col-sm-12 footer-links">
             <h4>Our Services</h4>
             <ul>
-              <li><i class="bi bi-dash"></i> <a href="#">Web Design</a></li>
-              <li><i class="bi bi-dash"></i> <a href="#">Web Development</a></li>
-              <li><i class="bi bi-dash"></i> <a href="#">Product Management</a></li>
-              <li><i class="bi bi-dash"></i> <a href="#">Marketing</a></li>
-              <li><i class="bi bi-dash"></i> <a href="#">Graphic Design</a></li>
+              <li><i class="bi bi-dash"></i> <a href="#">Amazon A-Z account handling</a></li>
+              <li><i class="bi bi-dash"></i> <a href="#">Web development / React.js / WebApp / Wordpres</a></li>
+              <li><i class="bi bi-dash"></i> <a href="#">Digital Marketing</a></li>
+              <li><i class="bi bi-dash"></i> <a href="#">Content Writing</a></li>
+              <li><i class="bi bi-dash"></i> <a href="#">Graphic Design / UIUX / Logo / Card / Flyer / Product Design / insta fb post Design Etc..</a></li>
             </ul>
           </div>
-
-          <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+          <div class="col-md-4 col-sm-12 footer-links">
+            <h4>MENU Links</h4>
+            <ul>
+              <li><i class="bi bi-dash"></i> <a href="index.html">Home</a></li>
+              <li><i class="bi bi-dash"></i> <a href="about.html">About us</a></li>
+              <li><i class="bi bi-dash"></i> <a href="services.html">Services</a></li>
+              <li><i class="bi bi-dash"></i> <a href="portfolio.html">portfolio</a></li>
+              <li><i class="bi bi-dash"></i> <a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4 col-sm-12 footer-contact text-center text-md-start">
             <h4>Contact Us</h4>
             <p>
-              A108 Adam Street <br>
-              New York, NY 535022<br>
-              United States <br><br>
-              <strong>Phone:</strong> +1 5589 55488 55<br>
-              <strong>Email:</strong> info@example.com<br>
+              <strong>Phone:</strong> <span>03123865844</span><br>
+              <strong>Email:</strong> <span>syedfawadhashmi5@gmail.com</span><br>
             </p>
-
+            <div class="social-links d-flex  mt-3">
+              <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+              <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+              <a href="#" class="github"><i class="bi bi-github"></i></a>
+            </div>
           </div>
-
+  
         </div>
       </div>
     </div>
-
-    <div class="footer-legal">
-      <div class="container">
-        <div class="copyright">
-          &copy; Copyright <strong><span>Nova</span></strong>. All Rights Reserved
-        </div>
-        <div class="credits">
-          <!-- All the links in the footer should remain intact. -->
-          <!-- You can delete the links only if you purchased the pro version. -->
-          <!-- Licensing information: https://bootstrapmade.com/license/ -->
-          <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/nova-bootstrap-business-template/ -->
-          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-        </div>
-      </div>
-    </div>
-  </footer><!-- End Footer --><!-- End Footer -->
-
+  </footer>
+  <!-- End Footer -->
+  
   <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
+  
   <div id="preloader"></div>
-
+  
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
-
-  <!-- Template Main JS File -->
+  
+  <!-- JS File -->
   <script src="assets/js/main.js"></script>
-
-</body>
-
-</html>
+  <script>
+    AOS.init();
+  </script>
+  </body>
+  
+  </html>
