@@ -275,7 +275,7 @@ font-weight: 700;
 }
 
 .header .logo img {
-  max-height: 40px;
+  max-height: 70px;
   margin-right: 6px;
 }
 
@@ -901,7 +901,7 @@ font-weight: 700;
     margin-top: 12px;
     margin-bottom: 0;
     max-width: 530px;
-    text-align: left;
+    text-align: center;
   }
 
 /*--------------------------------------------------------------
@@ -2543,6 +2543,27 @@ section {
 
 .portfolio {
   padding: 20px 15px;
+}
+
+.signup-form {
+  flex-direction: column;
+}
+
+.form-body {
+  border-radius: 15px 15px 15px 15px;
+  margin: 15px 0px;
+}
+
+.form-header {
+  border-radius: 15px 15px 15px 15px;
+}
+
+.form-header {
+  width: 100%;
+}
+
+.signup-form {
+  padding: 0 15px;
 }
 
   }
