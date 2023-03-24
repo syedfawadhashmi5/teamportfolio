@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>wise creations innovation</title>
+  <title>digital wisec reations</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -48,7 +48,7 @@
 
       <a href="index.html" class="logo d-flex align-items-center">
 
-        <h1 class="d-flex align-items-center"><img src="./assets/img/logo.png" alt="" srcset=""></h1>
+        <h1 class="d-flex align-items-center">Digital Wise Creations</h1>
       </a>
 
       <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
@@ -101,23 +101,23 @@
                   <div class="row">
                       <div class="input-group">
                           <label>First name </label>
-                          <input type="text" placholder="Enter your first name">
+                          <input type="text"  name="first_name" id="first_name" placholder="Enter your first name">
                       </div>
                       <div class="input-group">
                           <label>Last name</label>
-                          <input type="text" placholder="Enter your last name">
+                          <input type="text"  name="lastName" id="lastName" placholder="Enter your last name">
                       </div>
                   </div>
                   <!-- Email -->
                   <div class="row">
                       <div class="input-group">
                           <label>Email </label>
-                          <input type="email" placholder="Enter your email address">
+                          <input type="email" name="email" id="email" placholder="Enter your email address">
                       </div>
                   </div>
                   <!-- Gender & stuta -->
                   <div class="row">
-                      <div class="input-group">
+                      <div class="input-group" id="input">
                           <label>Gender </label>
     
                           <div class="radio-group">
@@ -144,7 +144,7 @@
     
                           </div>
                       </div>
-                      <div class="input-group">
+                      <div class="input-group"  id="input">
                           <label>Marital status</label>
                           <div class="checkbox-group">
                               <div>
@@ -167,11 +167,11 @@
                   <div class="row">
                       <div class="input-group">
                           <label>Upload Profile Picture</label>
-                          <input type="file">
+                          <input type="file" id="file">
                       </div>
                       <div class="input-group">
                           <label>Age</label>
-                          <input type="number">
+                          <input type="number" id="age">
                       </div>
                   </div>
     
@@ -179,12 +179,12 @@
                   <div class="row">
                       <div class="input-group">
                           <label for="">Introce your self and deep intro your skills</label>
-                          <textarea> </textarea>
+                          <textarea id="textarea"> </textarea>
                       </div>
                   </div>
                                 <!--  FORM FOOTER   -->
               <div class="form-footer">
-                <button class="btn">Create</button>
+                <button class="btn" >Create</button>
             </div>
               </div>
 
@@ -252,6 +252,14 @@
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.8.0/firebase-app.js"></script>
+
+<!-- Add Firebase products that you want to use -->
+<script src="https://www.gstatic.com/firebasejs/8.8.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.8.0/firebase-firestore.js"></script>
+
   
   <!-- JS File -->
   <script src="assets/js/main.js"></script>

@@ -190,37 +190,45 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-  const firebaseConfig = {
-  apiKey: "AIzaSyBsVs1kNeJTECNSA1-IhTZvYTA89hOepM4",
-  authDomain: "portfolioweb-2e85a.firebaseapp.com",
-  projectId: "portfolioweb-2e85a",
-  storageBucket: "portfolioweb-2e85a.appspot.com",
-  messagingSenderId: "344005757176",
-  appId: "1:344005757176:web:0e57b564b781ed7a91d30d",
-  measurementId: "G-03K815Q8P8"
+const firebaseConfig = {
+  apiKey: "AIzaSyDKkOYsXyAz7l-onRDOTYS0RwVGx8Vk4n8",
+  authDomain: "studentwebapp-f1849.firebaseapp.com",
+  projectId: "studentwebapp-f1849",
+  storageBucket: "studentwebapp-f1849.appspot.com",
+  messagingSenderId: "281704954231",
+  appId: "1:281704954231:web:dda82b779c11684514c972",
+  measurementId: "G-BDWXP5CJ8Y"
 };
-  // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
+ // Initialize Firebase
+firebase.initializeApp(firebaseConfig);
 
+var db = firebase.firestore();
+var collectionRef = db.collection("students");
 
-// Get a reference to the database service
-const db = firebase.firestore();
+function submitForm() {
+  var form = document.querySelector('.signup-form');
+  var firstName = document.getElementById("first_name").value;
+  var lastName = document.getElementById("last_name").value; // fixed typo
+  var email = document.getElementById("email").value;
+  var gender = document.getElementById("male").checked ? "male" : document.getElementById("female").checked ? "female" : document.getElementById("other").checked ? "other" : "";
+  var maritalStatus = document.getElementById("single").checked ? "single" : document.getElementById("married").checked ? "married" : ""; // fixed the input value to match the checkbox IDs
+  var profilePicture = document.getElementById("file").value;
+  var age = document.getElementById("age").value;
+  var bio = document.getElementById("bio").value; // fixed ID typo
 
-// Save form data to the database
-db.collection("students").add({
-  firstName: firstNameInput.value,
-  lastName: lastNameInput.value,
-  email: emailInput.value,
-  gender: genderInput.value,
-  maritalStatus: maritalStatusInput.value,
-  profilePicture: profilePictureInput.value,
-  age: ageInput.value,
-  skills: skillsInput.value,
-  password: passwordInput.value
-})
-.then((docRef) => {
-  console.log("Document written with ID: ", docRef.id);
-})
-.catch((error) => {
-  console.error("Error adding document: ", error);
-});
+  collectionRef.add({
+    firstName: firstName,
+    lastName: lastName,
+    email: email,
+    gender: gender,
+    maritalStatus: maritalStatus,
+    profilePicture: profilePicture,
+    age: age,
+    bio: bio
+  })
+  .then(function(docRef) {
+    console.log("Document written with ID: ", docRef.id);
+    // Clear the form
+    form.reset();
+ 
+  })}
