@@ -8,7 +8,7 @@
 /* Colors */
 :root {
   --color-default: #2b180d;
-  --color-primary: #19446B;
+  --color-primary: #030C26E6;
   --color-secondary: #009987;
 }
 
@@ -778,7 +778,7 @@ font-weight: 700;
 }
 
 #factsTwo .selected {
-    background-color: #19446B;
+    background-color: #030C26E6;
     color: #fff
 }
 
@@ -890,7 +890,7 @@ font-weight: 700;
 }
 
 .servicesec .boxwrap li:hover {
-  background: -webkit-linear-gradient(left, #f96e1c 0%, #f9be36 100%);
+  background: -webkit-linear-gradient(left, #1c44f9 0%, #366af9 100%);
   */box-shadow: 0px0px45px#20CB9817;
   transform: translateY(-0.625rem);
   -webkit-transition: .4s;
