@@ -889,9 +889,11 @@ font-weight: 700;
   font-size: 16px
 }
 
+
+
 .servicesec .boxwrap li:hover {
-  background: -webkit-linear-gradient(left, #1c44f9 0%, #366af9 100%);
-  */box-shadow: 0px0px45px#20CB9817;
+  background: var(--color-secondary);
+  box-shadow: 0px0px45px#20CB9817;
   transform: translateY(-0.625rem);
   -webkit-transition: .4s;
   -moz-transition: .4s;
