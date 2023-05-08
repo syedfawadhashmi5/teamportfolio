@@ -109,7 +109,7 @@ font-weight: 700;
 
 
 .section-header p {
-  max-width: 530px;
+  max-width: 1170px;
   text-align: left;
   padding: 0px 10px;
   color: #000;
@@ -527,6 +527,24 @@ font-weight: 700;
   z-index: 3;
 }
 
+#hero {
+  position: relative;
+  height: 100vh;
+  padding: 0;
+  overflow: hidden;
+}
+
+#bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+
 @media (min-width: 1034px) {
   .hero:after {
     position: absolute;
@@ -759,7 +777,7 @@ font-weight: 700;
     }
 
     #factsTwo .myinnerlist {
-        padding: 40px 0
+        padding: 10px 0
     }
 
     
@@ -770,7 +788,7 @@ font-weight: 700;
     }
 
     #factsTwo {
-    background: url(../img/counter-bg.jpg) bottom no-repeat;
+    background: var(--color-primary);
     -webkit-background-size: cover;
     background-size: cover;
     font-family: roboto slab, serif;
@@ -803,7 +821,7 @@ font-weight: 700;
   width: 100%;
   background-size: cover;
   background-position: top center;
-  padding: 60px 0;
+  padding: 0px;
   text-align: center
 }
 
@@ -826,7 +844,7 @@ font-weight: 700;
   width: 100%;
   margin-top: 40px;
   text-align: center;
-  margin-bottom: 40px
+  margin-bottom: 0px
 }
 
 .servicesec .boxwrap li {
@@ -1058,7 +1076,7 @@ font-weight: 700;
     width: 60px;
     height: 2px;
     left: -60px;
-    bottom: 45px;
+    bottom: 10px;
     margin: auto;
     width: 0px;
     height: 0;
@@ -1068,7 +1086,7 @@ font-weight: 700;
   }
 
   .services_area .service_top_text p {
-    max-width: 530px;
+    max-width: 1170px;
     text-align: left;
     padding: 0px 10px;
     color: #000;
@@ -2675,7 +2693,7 @@ height:100px;
   width: 60px;
   height: 2px;
   left: -23px;
-  bottom: 15px;
+  bottom: 10px;
   margin: auto;
   width: 0px;
   height: 0;
