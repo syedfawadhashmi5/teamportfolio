@@ -1023,6 +1023,8 @@ font-weight: 700;
   margin-bottom: 0px
 }
 
+
+
 .servicesec .boxwrap li {
   cursor: pointer;
   box-shadow: 0 0 30px #0000000f;
@@ -1204,6 +1206,8 @@ font-weight: 700;
   .wrapper .card{
     width: 100%;
   }
+
+  
 }
 
 
@@ -2783,7 +2787,11 @@ height:100px;
   
   @media (min-width: 481px) and (max-width: 767px) {
     
-    /* CSS */
+
+
+    .services_area .rtm{
+      margin: 0 auto;
+    }
     
   }
   
@@ -2794,6 +2802,33 @@ height:100px;
   
   @media (min-width: 320px) and (max-width: 480px) {
     
+    .awesome-feature-details p {
+      margin: 0;
+      padding: 0px 0px;
+  }
+
+    .single-service {
+      background-color: #000000;
+      padding: 0px 25px 12px;
+      -webkit-transition: .3s;
+      transition: .3s;
+      height: 328px;
+      display: flex;
+      flex-direction: column;
+  }
+
+    h2.aos-init.aos-animate {
+      margin: 41px 0;
+  }
+
+    .pricing-single {
+
+      margin: 10px 0;
+  }
+
+    .services_area .rtm{
+      margin: 0 auto;
+    }
 
 .feature_item {
   width: 100%;
