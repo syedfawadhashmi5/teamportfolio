@@ -2849,11 +2849,19 @@ height:100px;
 
     .content_box{
     margin: -5px 0;
-    height: 700px;
+    height: 550px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: end;
+    }
+
+    .content_box h2 {
+      font-size: 18px;
+    }
+
+    .content_box p {
+      font-size: 14px;
     }
     
     .awesome-feature-details p {
