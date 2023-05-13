@@ -8,8 +8,8 @@
 /* Colors */
 :root {
   --color-default: #2b180d;
-  --color-primary: #f60;
-  --color-secondary: #000599;
+  --color-primary: #0085bc;
+  --color-secondary: navy;
 }
 
 /* Smooth scroll behavior */
@@ -168,8 +168,8 @@ font-weight: 700;
 	margin:0 auto;
 }
 .awesome-feature-icon span:after {
-    background: rgba(0, 0, 0, 0) -webkit-linear-gradient(top, var(--color-primary) 0%, #ffb270 100%) repeat scroll 0 0;
-    background: rgba(0, 0, 0, 0) linear-gradient(to top, var(--color-primary) 0%, #ffb270 100%) repeat scroll 0 0;
+    background: rgba(0, 0, 0, 0) -webkit-linear-gradient(top, var(--color-primary) 0%, navy 100%) repeat scroll 0 0;
+    background: rgba(0, 0, 0, 0) linear-gradient(to top, var(--color-primary) 0%, navy 100%) repeat scroll 0 0;
     border-radius: 60px;
     content: "";
     height: 100%;
@@ -240,6 +240,8 @@ font-weight: 700;
 }
 .price-titel h4 {
   letter-spacing: 2px;
+  text-align: start;
+  padding-left: 2rem;
 }
 .pricing-price > span {
   color: #3e3e3e;
@@ -289,10 +291,10 @@ font-weight: 700;
 .price-decs {
   padding-bottom: 40px;
 }
-.pricing-single:hover,.pricing-single.active{background:#009987;color:#fff;}
+.pricing-single:hover,.pricing-single.active{background:#0085bc;color:#fff;}
 .pricing-single:hover  > span,.pricing-single:hover .price-decs ul li,.pricing-single:hover .price-titel h4{color:#ffffff;}
 .pricing-single.active .pricing-price > span,.pricing-single.active .price-decs ul li,.pricing-single.active .price-titel h4{color:#000000;}
-.pricing-single:hover .ordr-btn > a,.pricing-single.active .ordr-btn > a{background:#009987;color:#fff;display:block;}
+.pricing-single:hover .ordr-btn > a,.pricing-single.active .ordr-btn > a{background:#0085bc;color:#fff;display:block;}
 
 
 /*--------------------------------------------------------------
@@ -1278,11 +1280,22 @@ font-weight: 700;
 }
 
 .pricing-single:hover, .pricing-single.active{
-  background: #f60;
+  background: navy;
+}
+
+.price-decs ul {
+  text-align: start;
+}
+
+i.bi.bi-arrow-right {
+  color: #000000;
+  font-size: 18px;
+  font-weight: 700;
+  margin-right: 20px;
 }
 
 .footer .footer-content h4 {
-  color: #f60 !important;
+  color: #0085bc !important;
 }
 
 .pricing-price {
@@ -1294,7 +1307,7 @@ font-weight: 700;
 }
 
 .footer .footer-content strong {
-  color: #f60 !important;
+  color: #0085bc !important;
 }
 
   .services_area .service_top_text p {
@@ -1400,7 +1413,7 @@ font-weight: 700;
 .why-us h4 {
   font-size: 16px;
   font-weight: 600;
-  color: #000000;
+  color: #ffffff;
   font-family: var(--font-secondary);
 }
 
