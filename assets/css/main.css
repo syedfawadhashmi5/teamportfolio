@@ -2870,13 +2870,14 @@ height:100px;
   }
 
     .single-service {
-      background-color: #000000;
-      padding: 0px 25px 12px;
+      background-color: #fff;
+      padding: 0 24px 16px;
       -webkit-transition: .3s;
       transition: .3s;
-      height: 328px;
+      height: 332px;
       display: flex;
       flex-direction: column;
+      color: black
   }
   .d-flex.aos-init.aos-animate{
     padding-bottom: 40px;
