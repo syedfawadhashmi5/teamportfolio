@@ -8,8 +8,8 @@
 /* Colors */
 :root {
   --color-default: #2b180d;
-  --color-primary: #030C26E6;
-  --color-secondary: #009987;
+  --color-primary: #f60;
+  --color-secondary: #000599;
 }
 
 /* Smooth scroll behavior */
@@ -461,6 +461,8 @@ font-weight: 700;
   font-family: var(--font-secondary);
   margin: 0;
 }
+
+
 
 /*--------------------------------------------------------------
 # Desktop Navigation
@@ -1086,13 +1088,14 @@ font-weight: 700;
 }
 
 .servicesec .boxwrap li:hover {
-  background: var(--color-secondary);
+  background: var(--color-primary);
   box-shadow: 0px0px45px#20CB9817;
   transform: translateY(-0.625rem);
   -webkit-transition: .4s;
   -moz-transition: .4s;
   -o-transition: .4s;
-  transition: .4s
+  transition: .4s;
+  color: white;
 }
 
 .about_hero .icon-box .icon {
@@ -1106,7 +1109,7 @@ font-weight: 700;
 }
 
 .about_hero .icon-box:hover {
-  background: #009786;
+  background: #f60;
 }
 
 .about_hero .icon-box:hover .title a,
@@ -1256,7 +1259,7 @@ font-weight: 700;
     width: 60px;
     height: 2px;
     left: -60px;
-    bottom: 10px;
+    bottom: 0px;
     margin: auto;
     width: 0px;
     height: 0;
@@ -1264,6 +1267,35 @@ font-weight: 700;
     border-left: 20px solid #555;
     border-bottom: 14px solid transparent;
   }
+
+  .section-heading {
+    text-align: left !important;
+  }
+
+  .pricing-single:hover, .pricing-single.active {
+    background:#000599;
+    color: #fff;
+}
+
+.pricing-single:hover, .pricing-single.active{
+  background: #f60;
+}
+
+.footer .footer-content h4 {
+  color: #f60 !important;
+}
+
+.pricing-price {
+  padding: 0px;
+}
+
+.pricing-price > span {
+  font-size: 20px;
+}
+
+.footer .footer-content strong {
+  color: #f60 !important;
+}
 
   .services_area .service_top_text p {
     max-width: 1170px;
@@ -2801,6 +2833,15 @@ height:100px;
   */
   
   @media (min-width: 320px) and (max-width: 480px) {
+
+    .content_box{
+    margin: -5px 0;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    }
     
     .awesome-feature-details p {
       margin: 0;
@@ -2816,10 +2857,22 @@ height:100px;
       display: flex;
       flex-direction: column;
   }
-
-    h2.aos-init.aos-animate {
-      margin: 41px 0;
+  .d-flex.aos-init.aos-animate{
+    padding-bottom: 40px;
   }
+
+  #hero{
+    height: 100%;
+  }
+
+  .hero blockquote {
+    margin: 20px 0;
+}
+
+.single-service {
+  margin: 10px 0px;
+  border-radius: 10px;
+}
 
     .pricing-single {
 
@@ -3035,14 +3088,44 @@ section {
 
 .servicesec .boxwrap li {
   width: 100%;
-  margin: 0 auto;
+  margin: 10px auto;
 }
 
-
+.awesome-feature {
+  border-radius: 10px;
+  margin-bottom: 20px;
+  padding: 10px 5px 10px;
+}
 
 .servicesec .boxwrap {
   padding: 0px;
 
+}
+
+.awesome-feature:hover {
+  background: var(--color-secondary) none repeat scroll 0 0;
+  padding: 20px 30px;
+}
+
+.awesome-feature {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+
+.awesome-feature-details h5 {
+  font-size: 17px;
+  font-weight: 400;
+  text-transform: capitalize;
+  margin: 0 0 15px;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.awesome-feature-details {
+  margin-top: 20px;
+  text-align: left;
 }
 
 
