@@ -2848,12 +2848,12 @@ height:100px;
   @media (min-width: 320px) and (max-width: 480px) {
 
     .content_box{
-    margin: -5px 0;
-    height: 550px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: end;
+      margin: -5px 0;
+      height: 615px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: end;
     }
 
     .content_box h2 {
