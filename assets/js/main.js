@@ -28,6 +28,24 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+/*------------------
+		Hero Slider
+	--------------------*/
+  $('.hero__slider').owlCarousel({
+    loop: true,
+    dots: true,
+    mouseDrag: false,
+    animateOut: 'fadeOut',
+    animateIn: 'fadeIn',
+    items: 1,
+    margin: 0,
+    smartSpeed: 1200,
+    autoHeight: false,
+    autoplay: true,
+});
+
+
+
   /**
    * Mobile nav toggle
    */

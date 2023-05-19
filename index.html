@@ -30,6 +30,7 @@
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
   <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
   <link rel="stylesheet" href="./assets/css/icofont.css">
+  <link rel="stylesheet" href="./assets/css/owl.carousel.min.css">
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.2/circle-progress.min.js"></script>
@@ -54,7 +55,7 @@
 
       <a href="index.html" class="logo d-flex align-items-center">
 
-        <h1 class="d-flex align-items-center"><img src="./assets/img/web_logo.png" alt=""></h1>
+        <h1 class="d-flex align-items-center"><img src="./assets/img/web_logo (4).png" alt=""></h1>
       </a>
       <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
       <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
@@ -74,34 +75,67 @@
   </header><!-- End Header -->
 
   <!-- ======= Hero Section ======= -->
-  <section id="hero" class="hero d-flex align-items-center">
-    <video autoplay muted loop id="bg-video">
-      <source src="./assets/video/dark_v.mp4" type="video/mp4">
-    </video>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4">
-          <div class="content_box">
-            <h2 data-aos="fade-up">WHAT WE OFFER</h2>
-            <blockquote data-aos="fade-up" data-aos-delay="100">
-              <p>WE OFFER A RANGE OF SERVICES RELATED TO FREELANCING AND STUDENT CONSULTANCY , including web development, graphic
-                designing, and Amazon virtual assistant. Our award-winning team of designers and developers creates
-                content that drives results and sets the trends in graphic design. From websites to paid ads, our team
-                creates assets across platforms to build awareness and grow your business. Our capabilities also include
-                brand identity, such as logos and packaging. Our experienced professionals provide personalized
-                solutions to meet your specific needs and deliver high-quality results.</p>
+  <section class="hero">
+    <div class="hero__slider owl-carousel">
+        <div class="hero__item set-bg" data-setbg="/">
+          <div class="hero__text">
+            <span>For Web Developer</span>
+            <blockquote>
+            <h2>WE OFFER A RANGE OF SERVICES RELATED TO FREELANCING AND STUDENT CONSULTANCY , including web development, graphic
+              designing, and Amazon virtual assistant. Our award-winning team of designers and developers creates
+              content that drives results and sets the trends in graphic design. From websites to paid ads, our team
+              creates assets across platforms to build awareness and grow your business. Our capabilities also include
+              brand identity, such as logos and packaging. Our experienced professionals provide personalized
+              solutions to meet your specific needs and deliver high-quality results.</h2>
             </blockquote>
-            <div class="d-flex" data-aos="fade-up" data-aos-delay="200">
-              <a href="./about.html" class="btn-get-started">Get Started</a>
+            <div class="d-flex mob-res" data-aos="fade-up" data-aos-delay="200">
+              <a href='/about' class="primary-btn">Get Started</a>
               <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ"
-                class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch
+                class=" glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch
                   Video</span></a>
             </div>
-          </div>
         </div>
-      </div>
+        </div>
+        <div class="hero__item set-bg" data-setbg="img/hero/hero-1.jpg">
+          <div class="hero__text">
+            <span>For Web Developer</span>
+            <blockquote>
+            <h2>WE OFFER A RANGE OF SERVICES RELATED TO FREELANCING AND STUDENT CONSULTANCY , including web development, graphic
+              designing, and Amazon virtual assistant. Our award-winning team of designers and developers creates
+              content that drives results and sets the trends in graphic design. From websites to paid ads, our team
+              creates assets across platforms to build awareness and grow your business. Our capabilities also include
+              brand identity, such as logos and packaging. Our experienced professionals provide personalized
+              solutions to meet your specific needs and deliver high-quality results.</h2>
+            </blockquote>
+            <div class="d-flex mob-res" data-aos="fade-up" data-aos-delay="200">
+              <a href='/about' class="primary-btn">Get Started</a>
+              <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ"
+                class=" glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch
+                  Video</span></a>
+            </div>
+        </div>
+        </div>
+        <div class="hero__item set-bg" data-setbg="img/hero/hero-1.jpg">
+          <div class="hero__text">
+            <span>For Web Developer</span>
+            <blockquote>
+            <h2>WE OFFER A RANGE OF SERVICES RELATED TO FREELANCING AND STUDENT CONSULTANCY , including web development, graphic
+              designing, and Amazon virtual assistant. Our award-winning team of designers and developers creates
+              content that drives results and sets the trends in graphic design. From websites to paid ads, our team
+              creates assets across platforms to build awareness and grow your business. Our capabilities also include
+              brand identity, such as logos and packaging. Our experienced professionals provide personalized
+              solutions to meet your specific needs and deliver high-quality results.</h2>
+            </blockquote>
+            <div class="d-flex mob-res" data-aos="fade-up" data-aos-delay="200">
+              <a href='/about' class="primary-btn">Get Started</a>
+              <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ"
+                class=" glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch
+                  Video</span></a>
+            </div>
+        </div>
+        </div>
     </div>
-  </section><!-- End Hero Section -->
+</section>
   <!-- service area start -->
   <section class="service-area gray-bg">
     <div class="container">
@@ -743,6 +777,7 @@
 
   <!-- JS File -->
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/owl.carousel.min.js"></script>
   <script>
     let options = {
       startAngle: -1.55,
