@@ -32,11 +32,12 @@ document.addEventListener('DOMContentLoaded', () => {
 		Hero Slider
 	--------------------*/
 
+
+if($.isFunction('owlCarousel')){
   $('.hero__slider').owlCarousel({
     loop: true,
     dots: true,
     mouseDrag: false,
-    navigation : true,
     animateOut: 'fadeOut',
     animateIn: 'fadeIn',
     items: 1,
@@ -45,6 +46,8 @@ document.addEventListener('DOMContentLoaded', () => {
     autoHeight: false,
     autoplay: true,
 });
+
+}
 
 
 
