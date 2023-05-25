@@ -38,6 +38,7 @@ if($.isFunction('owlCarousel')){
     loop: true,
     dots: true,
     mouseDrag: false,
+    navigation : true,
     animateOut: 'fadeOut',
     animateIn: 'fadeIn',
     items: 1,
