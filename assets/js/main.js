@@ -32,23 +32,22 @@ document.addEventListener('DOMContentLoaded', () => {
 		Hero Slider
 	--------------------*/
 
-
-if($.isFunction('owlCarousel')){
-  $('.hero__slider').owlCarousel({
-    loop: true,
-    dots: true,
-    mouseDrag: false,
-    navigation : true,
-    animateOut: 'fadeOut',
-    animateIn: 'fadeIn',
-    items: 1,
-    margin: 0,
-    smartSpeed: 1200,
-    autoHeight: false,
-    autoplay: true,
+  $(document).ready(function() {
+    $('.hero__slider').owlCarousel({
+      loop: true,
+      dots: true,
+      mouseDrag: false,
+      navigation : true,
+      animateOut: 'fadeOut',
+      animateIn: 'fadeIn',
+      items: 1,
+      margin: 0,
+      smartSpeed: 1200,
+      autoHeight: false,
+      autoplay: true,
+  });
 });
 
-}
 
 
 
