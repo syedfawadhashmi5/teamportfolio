@@ -32,21 +32,21 @@ document.addEventListener('DOMContentLoaded', () => {
 		Hero Slider
 	--------------------*/
 
-  $("#owl-demo").owlCarousel({
-    navigation : true
-  });
-
-  $('.hero__slider').owlCarousel({
-    loop: true,
-    dots: true,
-    mouseDrag: false,
-    animateOut: 'fadeOut',
-    animateIn: 'fadeIn',
-    items: 1,
-    margin: 0,
-    smartSpeed: 1200,
-    autoHeight: false,
-    autoplay: true,
+  $(document).ready(function () {
+    (function ($) {
+      $('.hero__slider').owlCarousel({
+        loop: true,
+        dots: true,
+        mouseDrag: false,
+        animateOut: 'fadeOut',
+        animateIn: 'fadeIn',
+        items: 1,
+        margin: 0,
+        smartSpeed: 1200,
+        autoHeight: false,
+        autoplay: true,
+    });
+    })(jQuery);
 });
 
 
