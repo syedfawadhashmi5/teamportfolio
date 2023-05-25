@@ -31,6 +31,11 @@ document.addEventListener('DOMContentLoaded', () => {
 /*------------------
 		Hero Slider
 	--------------------*/
+
+  $("#owl-demo").owlCarousel({
+    navigation : true
+  });
+
   $('.hero__slider').owlCarousel({
     loop: true,
     dots: true,
