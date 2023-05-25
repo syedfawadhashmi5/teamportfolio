@@ -3046,6 +3046,21 @@ height:100px;
   */
   
   @media (min-width: 320px) and (max-width: 480px) {
+
+    .section-heading {
+      width: 290px;
+      margin: 12px auto;
+  }
+
+  .section-heading h2 {
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.section-heading p {
+  font-size: 14px;
+}
+
     .hero__item {
       height: 80vh;
       padding-top: 122px;
