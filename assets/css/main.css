@@ -8,7 +8,7 @@
 /* Colors */
 :root {
   --color-default: #2b180d;
-  --color-primary: #0085bc;
+  --color-primary: #1e31b7;
   --color-secondary: navy;
 }
 
@@ -67,7 +67,7 @@ h6 {
   padding-top: 15px;
 }
 .single-service:hover {
-  box-shadow: 0 0px 20px 0 #009987;
+  box-shadow: 0 0px 20px 0 var(--color-primary);
   -webkit-box-shadow: 0 0px 20px 0 rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 0 0px 20px 0 rgba(0, 0, 0, 0.1);
   transform: translateY(-5px);
@@ -395,7 +395,7 @@ font-weight: 700;
 }
 
 .scroll-top:hover {
-  background: rgba(86, 184, 230, 0.8);
+  background: var(--color-primary);
   color: #fff;
 }
 
@@ -1273,6 +1273,10 @@ font-weight: 700;
   font-size: 16px
 }
 
+.servicesec .boxwrap li h6 {
+  color: #ffffff;
+}
+
 .servicesec .boxwrap li:hover {
   background: var(--color-primary);
   box-shadow: 0px0px45px#20CB9817;
@@ -1455,13 +1459,18 @@ font-weight: 700;
   }
 
   .section-heading {
-    width: 570px;
+    width: 650px;
     margin: 12px auto;
     }
 
     .section-heading h2 {
       font-weight: 700;
       font-size: 35px;
+      font-weight: 700;
+      background: linear-gradient(-45deg, #3db3c5, #274685);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-transform: capitalize;
     }
 
     .section-heading p {
@@ -1593,8 +1602,8 @@ i.bi.bi-arrow-right {
 }
 
 .why-us .slides {
-  background-color: var(--color-secondary);
-  color: white;
+  background-color: black;
+  color: #ffffffe7;
   border-radius: 0px 15px 15px 0px;
 }
 
@@ -1603,6 +1612,15 @@ i.bi.bi-arrow-right {
   font-weight: 700;
   color: var(--color-primary);
 }
+
+.why-us h3 {
+  font-weight: 700;
+  font-size: 25px;
+  font-weight: 700;
+  background: linear-gradient(-45deg, #3db3c5, #274685);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-transform: capitalize;}
 
 .why-us h4 {
   font-size: 16px;
